@@ -106,9 +106,9 @@ export default function AttributionFixPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(240,92,62,0.1),transparent_50%)]"></div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
-          <div className="grid items-center gap-8 md:grid-cols-2 min-h-[35vh]">
+          <div className="grid items-center gap-8 md:grid-cols-2 min-h-[40vh]">
             {/* Left: Headline + CTA */}
-            <div className="space-y-5 max-w-2xl">
+            <div className="space-y-6 sm:space-y-8 max-w-2xl">
               <div className="space-y-4 sm:space-y-6">
                 <Badge className="mb-2 bg-profit-coral-100 text-profit-coral-800 border border-profit-coral-200">Stop Losing Revenue</Badge>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
