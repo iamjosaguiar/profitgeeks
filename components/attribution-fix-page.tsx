@@ -49,7 +49,7 @@ export default function AttributionFixPage() {
     },
     {
       q: 'How long until we see results?',
-      a: 'Typically 2-4 weeks for platform feedback improvements, and full ROI lift by Week 6-8. The biggest results compound over 6-12 months.',
+      a: 'Typically 2-4 weeks for platform feedback improvements, and full ROI lift by Weeks 6-8. The biggest results compound over 6-12 months.',
     },
     {
       q: 'Is this eCom-friendly?',
