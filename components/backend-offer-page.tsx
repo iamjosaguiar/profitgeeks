@@ -144,7 +144,7 @@ export default function BackendOfferPage() {
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3">ROAS Improvement</h3>
                   <p className="text-4xl font-bold text-purple-600 mb-2">2-4x</p>
-                  <p className="text-muted-foreground">Within 90 days</p>
+                  <p className="text-muted-foreground">Within 90 Days</p>
                 </CardContent>
               </Card>
             </div>

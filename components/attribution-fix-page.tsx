@@ -164,7 +164,7 @@ export default function AttributionFixPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">ROAS Improvement</h3>
                 <p className="text-4xl font-bold text-profit-teal-600 mb-2">2-4x</p>
-                <p className="text-slate-500">Within 30 days</p>
+                <p className="text-slate-500">Within 30 Days</p>
               </CardContent>
             </Card>
           </div>
