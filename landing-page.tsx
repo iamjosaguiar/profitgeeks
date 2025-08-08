@@ -88,7 +88,7 @@ export default function TrackingAuditLanding() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_70%)]" />
-        <div className="container relative mx-auto px-4 py-24 lg:py-32 max-w-7xl">
+        <div className="container relative mx-auto px-4 py-16 lg:py-20 max-w-7xl">
           <div className="text-center max-w-4xl mx-auto">
             <Badge
               variant="secondary"
@@ -180,7 +180,7 @@ export default function TrackingAuditLanding() {
             </div>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight">
-              Your team's tracking and signals are solid—but platform changes demand expert tweaks.
+              Your team's tracking and signals are solid - but platform changes demand expert tweaks.
             </h2>
             
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">

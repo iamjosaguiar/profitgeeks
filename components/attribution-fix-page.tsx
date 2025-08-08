@@ -48,7 +48,7 @@ export default function AttributionFixPage() {
     },
     {
       q: 'How long until we see results?',
-      a: 'Typically 2–4 weeks for platform feedback improvements, and full ROI lift by Week 6–8. The biggest results compound over 6–12 months.',
+      a: 'Typically 2-4 weeks for platform feedback improvements, and full ROI lift by Week 6-8. The biggest results compound over 6-12 months.',
     },
     {
       q: 'Is this eCom-friendly?',
@@ -60,7 +60,7 @@ export default function AttributionFixPage() {
     },
     {
       q: 'What\'s the investment?',
-      a: 'Most packages range $15K–$50K depending on your complexity, stack, and platform count. We\'ll quote after your free implementation call.',
+      a: 'Most packages range $15K-$50K depending on your complexity, stack, and platform count. We\'ll quote after your free implementation call.',
     },
   ]
 
@@ -97,14 +97,14 @@ export default function AttributionFixPage() {
       </header>
 
       {/* Hero (match homepage background aesthetic) */}
-      <section className="relative w-full py-12 sm:py-16 md:py-24 lg:py-32 xl:py-40 overflow-hidden">
+      <section className="relative w-full py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-profit-teal-50 via-white to-profit-coral-50"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(4,176,186,0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(240,92,62,0.1),transparent_50%)]"></div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
-          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center min-h-[50vh]">
+          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center min-h-[35vh]">
             <div className="space-y-4 sm:space-y-6">
               <Badge className="mb-2 bg-profit-coral-100 text-profit-coral-800 border border-profit-coral-200">
                 Stop Losing Revenue
@@ -113,7 +113,7 @@ export default function AttributionFixPage() {
                 Stop Losing Up to <span className="bg-gradient-to-r from-profit-teal-500 to-profit-coral-500 bg-clip-text text-transparent">35%</span> of Your Ad Budget to Broken Attribution
               </h1>
               <p className="mx-auto max-w-[90%] sm:max-w-[700px] text-slate-600 text-base sm:text-lg md:text-xl leading-relaxed px-4 sm:px-0">
-                If you're spending $10K+ per month on ads, there's a hidden leak costing you hundreds of thousands every year — and your media buyer can't see it.
+                If you're spending $10K+ per month on ads, there's a hidden leak costing you hundreds of thousands every year - and your media buyer can't see it.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
@@ -126,6 +126,46 @@ export default function AttributionFixPage() {
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Metrics (ported from landing page) */}
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="border-2 border-profit-teal-200 bg-profit-teal-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="bg-profit-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <TrendingUp className="h-10 w-10 text-profit-teal-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Average Recovery</h3>
+                <p className="text-4xl font-bold text-profit-teal-600 mb-2">30-45%</p>
+                <p className="text-slate-500">Additional profit identified</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-profit-coral-200 bg-profit-coral-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="bg-profit-coral-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="h-10 w-10 text-profit-coral-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Implementation</h3>
+                <p className="text-4xl font-bold text-profit-coral-600 mb-2">7-14 Days</p>
+                <p className="text-slate-500">To full optimisation</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-profit-teal-200 bg-profit-teal-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="bg-profit-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Zap className="h-10 w-10 text-profit-teal-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">ROAS Improvement</h3>
+                <p className="text-4xl font-bold text-profit-teal-600 mb-2">2-4x</p>
+                <p className="text-slate-500">Within 30 days</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -176,7 +216,7 @@ export default function AttributionFixPage() {
         </div>
       </section>
 
-      {/* Hidden Profit Leak */}
+      {/* Hidden Profit Leak - fully matched from Tracking Audit section */}
       <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 bg-gradient-to-br from-slate-50 to-white">
         <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-12 sm:mb-16">
@@ -187,7 +227,7 @@ export default function AttributionFixPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-gray-900">The Hidden Profit Leak Your Media Buyer Can't See</h2>
           </div>
 
-          <Card className="border-0 shadow-xl bg-white mb-12">
+          <Card className="border-2 shadow-xl bg-white mb-12">
             <CardContent className="p-10">
               <div className="space-y-8">
                 <div className="text-center">
@@ -201,48 +241,33 @@ export default function AttributionFixPage() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                      Platforms like Meta, Google, and TikTok can only optimise based on the quality of signals you send them. Most businesses are systematically underfeeding the algorithm, creating a cascade of poor performance.
+                      Platforms like Meta, Google, and TikTok can only optimise based on the quality of signals you send them. Most businesses are systematically underfeeding the algorithm, sending only top-of-funnel data (leads) or incomplete purchase events.
                     </p>
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between text-sm">
                       <span>Signal Quality Score</span>
-                      <span className="text-profit-coral-500 font-semibold">Poor</span>
+                      <span className="text-red-600 font-semibold">Poor</span>
                     </div>
                     <Progress value={25} className="h-3" />
                     <p className="text-xs text-slate-500">Most businesses operate at 25% signal efficiency</p>
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
-                  <Card className="bg-gradient-to-br from-slate-50 to-white border border-slate-200 text-center p-6">
-                    <Target className="h-8 w-8 text-profit-teal-500 mx-auto mb-3" />
-                    <h4 className="font-semibold text-slate-800 mb-2">Weak Signals</h4>
-                    <p className="text-slate-600 text-sm">Incomplete, delayed, or top-of-funnel-only events</p>
-                  </Card>
-                  <Card className="bg-gradient-to-br from-slate-50 to-white border border-slate-200 text-center p-6">
-                    <BarChart3 className="h-8 w-8 text-profit-teal-500 mx-auto mb-3" />
-                    <h4 className="font-semibold text-slate-800 mb-2">Bad Optimisation</h4>
-                    <p className="text-slate-600 text-sm">Algorithms can only guess with poor data</p>
-                  </Card>
-                  <Card className="bg-gradient-to-br from-slate-50 to-white border border-slate-200 text-center p-6">
-                    <DollarSign className="h-8 w-8 text-profit-teal-500 mx-auto mb-3" />
-                    <h4 className="font-semibold text-slate-800 mb-2">Systematic Overpayment</h4>
-                    <p className="text-slate-600 text-sm">30-35% of ad spend effectively wasted</p>
-                  </Card>
-                </div>
-
-                <Card className="bg-gradient-to-r from-profit-teal-500/5 to-profit-coral-500/5 border border-profit-teal-200">
+                <Card className="bg-destructive/5 border-destructive/20">
                   <CardContent className="p-6">
-                    <div className="text-center">
-                      <p className="font-semibold text-slate-900 mb-2">The Reality:</p>
-                      <p className="text-slate-700 text-lg">Weak signals = Bad optimisation = Systematic overpayment</p>
+                    <div className="flex items-start gap-4">
+                      <AlertTriangle className="h-6 w-6 text-destructive mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="font-semibold text-destructive mb-2">The Reality:</p>
+                        <p className="text-slate-700">Weak signals = Poor match rates = Less optimisation power = Wasted ad spend</p>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
 
-                <p className="text-lg text-slate-600 leading-relaxed text-center">
-                  We've seen <strong className="text-profit-coral">30–35% of ad spend effectively wasted</strong> — not from poor creatives, but from incomplete feedback loops.
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  When your tracking infrastructure sends incomplete or delayed conversion data, the algorithm makes suboptimal bidding decisions. This compounds daily, creating a systematic profit leak that grows with your ad spend.
                 </p>
               </div>
             </CardContent>
@@ -264,8 +289,8 @@ export default function AttributionFixPage() {
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 A fast-moving pay-per-lead agency was generating solid revenue, averaging $30,000/month. But growth had plateaued. Margins were shrinking, delivery confidence was low, and campaign performance had become unpredictable.
               </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                They were scaling revenue, but without attribution clarity — and it was killing their confidence.
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                They were scaling revenue, but without attribution clarity - and it was killing their confidence.
               </p>
 
               <h4 className="text-xl font-semibold mb-4 text-gray-900">The Core Problems</h4>
@@ -325,7 +350,7 @@ export default function AttributionFixPage() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
-                  The CPAL metric was displayed at $47.91 — this became their north star, aligning the team around profitable delivery rather than just lead volume.
+                  The CPAL metric was displayed at $47.91 - this became their north star, aligning the team around profitable delivery rather than just lead volume.
                 </p>
               </div>
             </div>
@@ -409,7 +434,7 @@ export default function AttributionFixPage() {
 
             <div className="bg-gradient-to-r from-profit-teal-500/5 to-profit-coral-500/5 p-6 rounded-lg mt-8 border-l-4 border-profit-teal-500 text-center">
               <p className="text-slate-800 italic text-xl font-medium">
-                "CPAL changed the game for us. We're not just generating leads anymore — we're scaling profitable delivery."
+                "CPAL changed the game for us. We're not just generating leads anymore - we're scaling profitable delivery."
               </p>
             </div>
           </div>

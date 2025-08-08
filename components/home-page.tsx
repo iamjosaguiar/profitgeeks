@@ -215,14 +215,14 @@ return (
 
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative w-full py-12 sm:py-16 md:py-24 lg:py-32 xl:py-40 overflow-hidden">
+      <section className="relative w-full py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-profit-teal-50 via-white to-profit-coral-50"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(4,176,186,0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(240,92,62,0.1),transparent_50%)]"></div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
-          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center min-h-[60vh]">
+          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center min-h-[40vh]">
             <div className="space-y-4 sm:space-y-6">
               <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-profit-teal-100 text-profit-teal-800 rounded-full text-xs sm:text-sm font-medium">
                 <Rocket className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />

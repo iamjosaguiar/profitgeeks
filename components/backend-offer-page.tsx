@@ -279,7 +279,7 @@ export default function BackendOfferPage() {
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
                   Most setups only track within 7 days, missing delayed conversions, upgrades, and repeat buyers. 
-                  You're not just missing data—you're distorting performance and telling algorithms campaigns failed when they didn't.
+                  You're not just missing data - you're distorting performance and telling algorithms campaigns failed when they didn't.
                 </p>
               </CardContent>
             </Card>
@@ -313,7 +313,7 @@ export default function BackendOfferPage() {
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
                   Teams stuck in spreadsheet loops, patchy dashboards, and VA reports. No single source of truth, 
-                  no confidence, no speed—and no one's sure which ads drive revenue.
+                  no confidence, no speed - and no one's sure which ads drive revenue.
                 </p>
               </CardContent>
             </Card>
@@ -421,7 +421,7 @@ export default function BackendOfferPage() {
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
                   Tracks fbclid, gclid, ttclid and more. Connects each sale back to the exact campaign, 
-                  ad, and platform—even weeks later.
+                  ad, and platform - even weeks later.
                 </p>
               </CardContent>
             </Card>
@@ -454,7 +454,7 @@ export default function BackendOfferPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  Tracks sales, upgrades, subscriptions after first opt-in—critical for high-ticket 
+                  Tracks sales, upgrades, subscriptions after first opt-in - critical for high-ticket 
                   or multi-step offers.
                 </p>
               </CardContent>
@@ -1670,7 +1670,7 @@ export default function BackendOfferPage() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              We don't just fix your tracking—we help uncover and activate untapped revenue potential in your backend systems.
+              We don't just fix your tracking - we help uncover and activate untapped revenue potential in your backend systems.
             </p>
           </div>
 
@@ -1783,7 +1783,7 @@ export default function BackendOfferPage() {
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-4">Full Revenue Visibility</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Gain complete insight into which ads, platforms, and campaigns drive real revenue—not just leads.
+                  Gain complete insight into which ads, platforms, and campaigns drive real revenue - not just leads.
                 </p>
               </CardContent>
             </Card>
@@ -2024,7 +2024,7 @@ export default function BackendOfferPage() {
               </CardHeader>
               <CardContent className="ml-11">
                 <p className="text-muted-foreground leading-relaxed">
-                  That's actually ideal—it means you have the most to gain! We specialise in rebuilding tracking from the ground up. 
+                  That's actually ideal - it means you have the most to gain! We specialise in rebuilding tracking from the ground up. 
                   In fact, starting fresh often produces better results than trying to patch existing broken systems. 
                   We'll conduct a thorough audit, identify what can be salvaged, and rebuild everything else using best practices. 
                   The more broken your current setup, the more dramatic your improvements will be.
