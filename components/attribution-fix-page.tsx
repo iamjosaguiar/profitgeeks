@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Progress } from '@/components/ui/progress'
 import { CheckCircle, TrendingUp, Target, Zap, BarChart3, Shield, ArrowRight, AlertTriangle, Users, Clock, Star, X, HelpCircle, DollarSign } from 'lucide-react'
+import ImplementationTimeline from '@/components/implementation-timeline'
 import { FacebookEvents } from '@/lib/facebook-conversions'
 
 export default function AttributionFixPage() {
@@ -470,6 +471,9 @@ export default function AttributionFixPage() {
           </div>
         </div>
       </section>
+
+      {/* Implementation Timeline */}
+      <ImplementationTimeline />
 
       {/* FAQ */}
       <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 bg-gradient-to-br from-slate-50 to-white">
