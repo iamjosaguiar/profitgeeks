@@ -150,7 +150,7 @@ export default function TrackingAuditLanding() {
                     <Target className="h-10 w-10 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3">Implementation</h3>
-                  <p className="text-4xl font-bold text-blue-600 mb-2">2-4 Weeks</p>
+                  <p className="text-4xl font-bold text-blue-600 mb-2">8 Weeks</p>
                   <p className="text-muted-foreground">To full optimisation</p>
                 </CardContent>
               </Card>

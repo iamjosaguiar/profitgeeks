@@ -12,6 +12,7 @@ import { Progress } from '@/components/ui/progress'
 import { CheckCircle, TrendingUp, Target, Zap, BarChart3, Shield, ArrowRight, AlertTriangle, Users, Clock, Star, X, HelpCircle, DollarSign } from 'lucide-react'
 import ImplementationTimeline from '@/components/implementation-timeline'
 import { FacebookEvents } from '@/lib/facebook-conversions'
+import { AspectRatio } from '@/components/ui/aspect-ratio'
 
 export default function AttributionFixPage() {
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -97,7 +98,7 @@ export default function AttributionFixPage() {
         <Button className="md:hidden bg-gradient-to-r from-profit-teal-500 to-profit-coral-500 text-white px-4 py-2 text-sm">Menu</Button>
       </header>
 
-      {/* Hero (match homepage background aesthetic) */}
+      {/* Hero with video placeholder */}
       <section className="relative w-full py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-profit-teal-50 via-white to-profit-coral-50"></div>
@@ -105,27 +106,48 @@ export default function AttributionFixPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(240,92,62,0.1),transparent_50%)]"></div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
-          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center min-h-[35vh]">
-            <div className="space-y-4 sm:space-y-6">
-              <Badge className="mb-2 bg-profit-coral-100 text-profit-coral-800 border border-profit-coral-200">
-                Stop Losing Revenue
-              </Badge>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-                Stop Losing Up to <span className="bg-gradient-to-r from-profit-teal-500 to-profit-coral-500 bg-clip-text text-transparent">35%</span> of Your Ad Budget to Broken Attribution
-              </h1>
-              <p className="mx-auto max-w-[90%] sm:max-w-[700px] text-slate-600 text-base sm:text-lg md:text-xl leading-relaxed px-4 sm:px-0">
-                If you're spending $10K+ per month on ads, there's a hidden leak costing you hundreds of thousands every year - and your media buyer can't see it.
-              </p>
+          <div className="grid items-center gap-8 md:grid-cols-2 min-h-[35vh]">
+            {/* Left: Headline + CTA */}
+            <div className="space-y-5 max-w-2xl">
+              <div className="space-y-4 sm:space-y-6">
+                <Badge className="mb-2 bg-profit-coral-100 text-profit-coral-800 border border-profit-coral-200">Stop Losing Revenue</Badge>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+                  Stop Losing Up to <span className="bg-gradient-to-r from-profit-teal-500 to-profit-coral-500 bg-clip-text text-transparent">35%</span> of Your Ad Budget to Broken Attribution
+                </h1>
+                <p className="text-slate-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-[700px]">
+                  If you're spending $10K+ per month on ads, there's a hidden leak costing you hundreds of thousands every year - and your media buyer can't see it.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                <Button
+                  onClick={() => openForm('hero')}
+                  size="lg"
+                  className="bg-gradient-to-r from-profit-teal-500 to-profit-coral-500 hover:from-profit-teal-600 hover:to-profit-coral-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+                >
+                  Schedule Implementation Call
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                </Button>
+              </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-              <Button
-                onClick={() => openForm('hero')}
-                size="lg"
-                className="bg-gradient-to-r from-profit-teal-500 to-profit-coral-500 hover:from-profit-teal-600 hover:to-profit-coral-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
-              >
-                Get Your Backend Fixed
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </Button>
+
+            {/* Right: Video Placeholder */}
+            <div className="order-first md:order-none">
+              <AspectRatio ratio={16 / 9} className="rounded-xl border border-slate-200 shadow-lg overflow-hidden bg-black">
+                <video
+                  className="h-full w-full"
+                  controls
+                  preload="none"
+                  poster="/placeholder.jpg"
+                  aria-label="Founder video placeholder"
+                >
+                  <source src="" type="video/mp4" />
+                </video>
+              </AspectRatio>
+              <div className="mt-3 flex flex-wrap items-center gap-2 text-slate-600 text-sm">
+                <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1">60–90s Overview</span>
+                <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1">Captions Included</span>
+                <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1">Founder-Led</span>
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +174,7 @@ export default function AttributionFixPage() {
                   <Target className="h-10 w-10 text-profit-coral-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Implementation</h3>
-                <p className="text-4xl font-bold text-profit-coral-600 mb-2">2-4 Weeks</p>
+                <p className="text-4xl font-bold text-profit-coral-600 mb-2">8 Weeks</p>
                 <p className="text-slate-500">To full optimisation</p>
               </CardContent>
             </Card>
@@ -477,7 +499,7 @@ export default function AttributionFixPage() {
 
       {/* FAQ */}
       <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 bg-gradient-to-br from-slate-50 to-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
 
           <div className="space-y-6">
@@ -498,7 +520,7 @@ export default function AttributionFixPage() {
 
       {/* Final CTA (light aesthetic to match homepage) */}
       <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6 text-gray-900">Let's Fix This Once. Not Keep Patching.</h2>
           <p className="mx-auto max-w-[90%] sm:max-w-[700px] text-slate-600 text-base sm:text-lg md:text-xl leading-relaxed mb-6">
             Stop guessing which ads work. Stop feeding junk data to billion-dollar algorithms. Stop losing margin to blind optimisation.
