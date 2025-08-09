@@ -10,6 +10,7 @@ interface FacebookUserData {
   db?: string[] // date of birth (hashed)
   ge?: string[] // gender (hashed)
   external_id?: string[] // external ID (hashed)
+  fb_login_id?: string // Facebook login ID (not hashed per FB spec)
   client_ip_address?: string
   client_user_agent?: string
   fbc?: string // Facebook click ID
@@ -26,6 +27,7 @@ interface FacebookCustomData {
   num_items?: number
   search_string?: string
   status?: string
+  subscription_id?: string
   [key: string]: any
 }
 
@@ -175,6 +177,7 @@ export async function sendFacebookConversionEvent(
     dateOfBirth?: string // YYYY-MM-DD format
     gender?: "m" | "f" | "male" | "female"
     externalId?: string
+    facebookLoginId?: string
   } = {},
   customData?: FacebookCustomData,
   eventId?: string,
@@ -234,6 +237,11 @@ export async function sendFacebookConversionEvent(
 
     if (userData.externalId) {
       hashedUserData.external_id = [await hashData(userData.externalId)]
+    }
+
+    // Facebook Login ID (not hashed)
+    if (userData.facebookLoginId) {
+      hashedUserData.fb_login_id = userData.facebookLoginId
     }
 
     // Add browser data
